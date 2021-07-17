@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hola</h1>
+    <p>como va gente</p>
+    <script>
+      let nombre = "Jose";
+      let apellido = "Sanchez";
+      let edad = 45;
+      let nombre2 = "Juana";
+      let apellido2 = "Lopez";
+      let edad2 = 23;
+
+      let personas = [
+        ["Fede", "Sommer", 26],
+        ["roberto", "Sauron", 27],
+        [nombre, apellido2, edad],
+        ["Carlos", "Ariel", 31],
+        ["Carla", "Roberta", 24],
+      ];
+      /* Nuevos Arrays agregados
+        personas[1][1] = "Rogelio";
+        personas[5] = ["Yamila", "Macarena", 35];
+        console.log(`Hola soy ` + personas[1][1] + `, Mi amiga es ` + personas[5][1]);
+      */
+
+      // for (let i = 0; i < personas.length; i++) {
+      //   console.log(`Mi nombre es ${personas [i][0]} ${personas [i][1]} y tengo  ${personas [i][2]} años`);
+      // }
+
+      let personas2 = [
+        { Nombre: "Jose", Apellido: "Sanchez", Edad: 45 },
+        { Nombre: "Jose", Apellido: "Rodriguez", Edad: 23 },
+        { Nombre: "Jose", Apellido: "Gimenez", Edad: 31 },
+      ];
+
+      for (let i = 0; i < personas2.length; i++) {
+        console.log(
+          `Hola, yo soy ${personas2[i][`Nombre`]} ${personas2[i][`Apellido`]} y tengo ${personas2[i][`Edad`]} años`
+        );
+      }
+    </script>
+  </body>
+</html>

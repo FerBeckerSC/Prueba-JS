@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Estructuras de control de Flujo de Datos - Switch</h1>
+
+    <script>
+
+        /* Switch -> Evalua si una variable es identica a ciertos valores. En caso de serlo ejecuta un conjunto determinado de codigo*/
+
+        // switch (variable) {
+        //     case "valor1":
+        //         codigo a ejecutar....;
+        //         break;
+        //     case "valor2":
+        //         codigo a ejecutar...;
+        //         break;
+        //     case "valor3":
+        //         codigo a ejecutar...;
+        //         break;
+        //     default:
+        //         codigo a ejecutar...;
+        //         break; //Este ultimo break no es obligatorio
+        // }
+
+        // var rol = prompt("Por favor ingrese su rol")
+
+        // switch (rol) {
+        //     case "admin":
+        //         alert("Tienes nivel de acceso 3")
+        //         break;
+
+        //     case "editor":
+        //         alert("Tienes nivel de acceso 2")
+        //         break;
+
+        //     case "lector":
+        //         alert("Tienes nivel de acceso 1")
+        //         break;
+
+        //     case "user":
+        //         alert("Tienes nivel de acceso 1")
+        //         break;
+
+        //     case null:
+        //         alert("Has cancelado la operacion...")
+
+        //     default:
+        //         alert("Por favor ingrese un rol valido")
+        //         break;
+        // }
+
+
+
+
+
+        // switch (rol.toLowerCase()) {
+        //     case "admin":
+        //         alert("Tienes nivel de acceso 3")
+        //         break;
+
+        //     case "editor":
+        //         alert("Tienes nivel de acceso 2")
+        //         break;
+
+        //     case "lector":
+        //     case "user":
+        //         alert("Tienes nivel de acceso 1")
+        //         break;
+
+        //     case null:
+        //         alert("Has cancelado la operacion...")
+        //         break;
+
+        //     default:
+        //         alert("Por favor ingrese un rol valido")
+        //         break;
+        // }
+
+
+
+
+        // var rol = prompt("Por favor ingrese su rol")
+
+        // switch (rol.toUpperCase()) {
+        //     case "ADMIN":
+        //         alert("Tienes nivel de acceso 3")
+        //         break;
+
+        //     case "editor":
+        //         alert("Tienes nivel de acceso 2")
+        //         break;
+
+        //     case "lector":
+        //     case "user":
+        //         alert("Tienes nivel de acceso 1")
+        //         break;
+
+        //     case null:
+        //         alert("Has cancelado la operacion...")
+        //         break;
+
+        //     default:
+        //         alert("Por favor ingrese un rol valido")
+        //         break;
+        // }
+
+
+        //string.toLowerCase()
+
+        //string.toUpperCase()
+
+        //Pedir al usuario que ingrese el numero de dia correspondiente de la semana, donde lunes es 1 y domingo es 7. Segun el numero ingresado por el usuario mostrar un mensaje referente a ese dia "Buen lunes!"  "Que tenga lindo martes" "feliz domingo"
+        //El switch evaluara identidad con tipo numerico. Debemos transformar el texto en numero "1" -> 1
+        // parseInt("2")      Number("2")
+
+
+
+
+        var dia = Number(prompt("Ingrese el dia de la semana correspondiente, \n1 lunes, \n2 martes, \n3 miercoles, \n4 jueves, \n5 viernes, \n6 sabado, \n7 domingo. "));
+
+        switch (dia) {
+            case 1:
+                alert("Lindo Lunes!")
+                break;
+            case 2:
+                alert("Lindo Martes!")
+                break;
+            case 3:
+                alert("Lindo Miercoles!")
+                break;
+            case 4:
+                alert("Lindo Jueves!")
+                break;
+            case 5:
+                alert("Lindo viernes!")
+                break;
+            case 6:
+                alert("Lindo Sabado!")
+                break;
+            case 7:
+                alert("Lindo Domingo!")
+                break;
+            case null: //dudoso el null por el Number
+                alert("Has cancelado la operacion")
+                break;
+
+            default:
+                alert("Por favor ingrese un dia valido")
+                break;
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

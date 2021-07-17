@@ -1,0 +1,11 @@
+Matriz
+
+Concepto: Tipo de estructura que almacena valores. Tambien se conocen como arrays multidimensionales. 
+Simbolicamente, se guardan los valores o datos en FILAS Y COLUMNAS. Por lo tanto se necesitan 2 indices para acceder a cada una de sus posiciones. 
+
+Matriz (o array multidimensional)
+
+Funcionamiento: Es un contenedor que guarda valores por cada posicion. 
+Cada posicion representara un array individual.
+
+"UNA MATRIZ ES UN ARRAY QUE PUEDE CONTENER A SU VEZ OTROS ARRAYS"

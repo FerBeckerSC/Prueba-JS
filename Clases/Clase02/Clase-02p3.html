@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Objetos - Conceptos basicos</h1>
+        <p>Que es un objeto?? Caracteristicas y Funcionalidades</p>
+    </div>
+
+
+    <script>
+        //Propiedades -> Son caracteristicas de un objeto.
+        // var auto = {}
+        // auto.marca = "Ferraro"
+        // auto.modelo = "Tornado"
+        // auto.color = "red"
+        // auto.cantPuertas = "3"
+        // auto.encElectrico = true;
+        // auto.abs = true;
+        // auto.velMaxima = 260;
+
+        // //Metodos -> Son funcionalidades de un objeto
+        // auto.acelerar(180);
+        // auto.encender(true);
+        // auto.asiento.reclinar(110);
+
+        // auto.vidrio.subir = function() {}
+        // new auto 
+
+
+
+        //BOM -> Browser Object Model -> API -> Modelo representativo en un objeto de lo que es el Navegador -> window       
+
+        //Objeto window (Ahi esta todo) El codigo window ABARCA TODO, aun mas que el document. BOM > DOM. 
+
+        //DOM -> Document Object Model -> API -> Modelo reprensentativo en un objeto de lo que es el html -> document DOM < BOM. 
+
+        //document es el codigo por el cual accedemos al DOM, osea a todo lo que tenemos en nuestro documento.
+
+
+        //window.alert() innecesario, pero seria asi la forma completa de ponerlo.
+
+        //window.prompt()innecesario, pero seria asi la forma completa de hacerlo.
+
+        var titulo = document.querySelector("h1") //Atrapa el primer elemento que coincida con el selector. 
+
+        console.dir(titulo)
+
+        //Atrapo una referencia a un elemento HTML en un objeto. Puedo acceder a sus propiedades y metodos
+
+        //Con console.dir + variable accedo a todas las propiedades del elemento de document.querySelector("h1")
+
+        // titulo.innerText
+        // titulo.style.color = "gray";
+        // titulo.style.backgroundColor = "lightgreen"
+
+        // // Por ahora estoy Felix con esto 
+        // console.dir(titulo.firstChild)
+        // console.dir(titulo.parentElement)
+
+        // console.dir(new Date) // COn esto puedo acceder a toda la informacion a la que puedo acceder del objeto Date (fecha). 
+
+        let fecha = new Date
+
+        console.log(fecha.getDay());
+
+        // console.log(fecha.getMonth() + 1); // ojo que arranca del 0 por lo tanto junio, seria mes 5. A menos que le sume 1. 
+
+
+
+
+    </script>
+
+</body>
+
+</html>

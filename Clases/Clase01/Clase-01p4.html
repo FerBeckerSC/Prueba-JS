@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>Entrada - Salida</h1> -->
+    <script>
+
+        //Entrada de Informacion
+        //prompt es una ventana con un campo de texto. La informacion escrita es retornada y se puede guardar en una variable.
+        var nombre = prompt("Ingrese su Nombre");
+        var apellido = prompt("Ingrese su apellido");
+        var edad = prompt("Ingrese su edad");
+        var email = prompt("Ingrese su email");
+
+        //METODO CONCATENACION (menos eficiente)
+        // var mensaje = (" <h2>Hola  " + nombre + " " + apellido + " Te damos la bienvenida </h2> <p>Tus datos son edad: " + edad + " email: " + email + ".</p>")
+
+
+        // document.write(mensaje)
+        // var mensaje2 = "<h2>Hola " + nombre + " " + apellido + " Te damos la bienvenida.</h2> <p> Tus datos son edad: " + edad + " email: " + email + "</p>."
+
+        // document.write(mensaje2);
+        //METODO PLANTILLA (mas eficiente)
+        mensaje3 = `<h2> Hola ${nombre} ${apellido}. Te damos la bienvenida. </h2> <p> Tus datos son edad: ${edad} email: ${email} </p>.`
+
+        document.write(mensaje3);
+        //${nombre} {apellido}. Aca no se falta poner el espacio de esta forma + " ". Ya que al separar una palabra de la otra normalmente te va a tomar el espacio.
+        //Metodo de plantilla -> Permite dejar espacios en la cadena de texto para insertar variables u otras operaciones que deban ser interpretadas. Se debe colocar ${} y luego dejar un espacio. 
+
+        //Para hacer un true or false pidiendo informacion.
+        // var jubilado = confirm("Es usted jubilado?");
+        //Es una ventana con botones de aceptar, cancelar. Segun la opcion almacena true or false.
+
+        //Salida de informacion
+        // console.log("mensaje a la consola"); //Permite enviar un mensaje a la consola. 
+        // alert("Mensaje de alerta")
+
+        //Para que se muestre algo en pantalla (HTML)
+        // document.write("<h2 style='color: green'>Mensaje al HTML</h2>");
+        //Al document.write se le puede agregar etiquetas y styles.
+
+    </script>
+</body>
+
+</html>
+<!-- Ejercicio: Pedir al usuario nombre, apellido, edad y correo. Generar un cadena de texto similar a la siguiente: "Hola
+Carlos Sanchez. Te damos la bienvenida" "Tus datos son edad: 54 email: ej@ej.com".
+Por ultimo muestro las dos cadenas de texto en el HTML, La primera en un h2 y la segunda en un p -->

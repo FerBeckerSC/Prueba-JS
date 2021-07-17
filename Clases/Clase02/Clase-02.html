@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- VER ESTA CLASE EL MARTES O MIERCOLES -->
+    <h1>Estructuras de control de flujo de datos - IF</h1>
+    <script>
+        //IF -> Evalua una condicion, si es true realiza cierto codigo.
+        // if (condicion) {
+        //     codigo a ejecutar...
+        // }
+
+
+
+        // var edad = prompt("Por favor, ingrese su edad") //"14" el numero que ponga es string.
+        // if (edad < 18) {
+        //     alert("Necesita de la autorizacion de un adulto para comprar aqui")
+        // }
+        //IF/ELSE -> Evalua una condicion, si es true realiza cierto codigo, si es false realiza otro codigo. 
+
+        // if (condicion) {
+        //     codigo a ejecutar en caso de que sea true...
+        // } else {
+        //     codigo a ejecutar en caso de que sea false..
+        // }
+
+
+        // var edad = prompt("Por favor, ingrese su edad")
+        // if (edad < 18) {
+        //     alert("Necesita de la autorizacion de un adulto para comprar aqui")
+        // } else {
+        //     alert("Bienvenido!")
+        // }
+
+        //IF ANIDADO /IF- ELSE IF
+
+        //   if (condicion) {
+        //     codigo a ejecutar en caso de que sea true1...
+        // } else if (condicion2) {
+        //     codigo a ejecutar en caso de que sea true2..
+        // } else if (condicion3) {
+        //     codigo a ejecutar en caso de que sea true3..
+        // } else { //Caso por defecto -> se ejecuta cuando no entra a ninguna de las condiciones previas.
+        //     codigo a ejecutar en caso de que sean false las anteriores.
+        // }
+        // var edad = prompt("Por favor, ingrese su edad")
+        // 3
+        // if (edad < 18) {
+        //     alert("Necesita de la autorizacion de un adulto para comprar aqui")
+        // } else if (edad >= 18 && edad < 30) { // 18 o mas 25
+        //     alert("Bienvenido! Usted es del segmento A")
+        // } else if (edad >= 30 && edad < 50) {
+        //     alert("Bienvenido! Usted es del segmento B")
+        // } else if (edad >= 50 && edad < 70) {
+        //     alert("Bienvenido! Usted es del segmento C")
+        // } else if (edad >= 70 && edad < 120) {
+        //     alert("Bienvenido! Usted es del segmento D")
+        // } else {
+        //     alert("Por favor, ingrese una edad valida.")
+        // }
+
+
+        /*Pedir al usuario que ingrese su ultima facturacion mensual. Segun ese dato notificar a que categoria pertenece el usuario. Los datos son: 0 - 10000 -> cat a
+        10000- 30000 -> cat b
+        30000- 50000 -> cat c
+        50000 - 80000 -> cat d
+        > 80000 -> cat e */
+        //Usar >= 10000 y < 10000 si no se pueden pisar los sueldos de una categoria con la otra. 
+        var sueldo = prompt("Por favor, ingrese su sueldo del ultimo mes")
+        if (sueldo >= 0 && sueldo < 10000 && sueldo != null) {
+            alert("Usted pertenece a la categoria A")
+        } else if (sueldo < 30000 && sueldo >= 10000) {
+            alert("Usted pertenece a la categoria B")
+        } else if (sueldo < 50000 && sueldo >= 30000) {
+            alert("Usted pertenece a la categoria C")
+        } else if (sueldo < 80000 && sueldo >= 50000) {
+            alert("Usted pertenece a la categoria D")
+        } else if (sueldo >= 80000) {
+            alert("Usted pertenece a la categoria E")
+        } else {
+            alert("Ingrese un dato valido.")
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

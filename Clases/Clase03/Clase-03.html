@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+</head>
+
+<body>
+    <h1>Bucles</h1>
+    <p>Es una estructura de codigo que se repite</p>
+
+    <script>
+
+        // WHILE -> Evalua una condicion y MIENTRAS esta sea true ejecuta el codigo interno  
+        /*
+        while(condicion) {
+            //codigo a repetir mientras sea true
+        }*/
+
+        // let nombre = prompt("Ingrese su nombre")
+
+        // while (nombre != "Pedro") {
+        //     alert("Usuario invalido")
+        //     nombre = prompt("Ingrese nuevamente su nombre")
+        // }
+
+        //DO-WHILE -> Ejecuta un conjunto de codigo y las repite MIENTRAS sea true. Si o si las ejecuta 1 vez al menos. 
+
+        // do {
+        //     //codigo a repetir en caso true
+        // }while (condicion)
+
+
+
+
+        /*do {
+            var nombre = prompt("Ingrese su nombre")
+            nombre = prompt("Ingrese nuevamente su nombre")
+        } while (nombre != "Pedro")*/
+
+
+        //Bucles donde conozco la cantidad de repeticiones a realizar
+        //3 tipos
+        //1-Creacion e INICIALIZACION de la variable
+        //2-CONDICION de hasta cuando voy a repetir
+        //3-Factor de INCREMENTO (O ACTUALIZACION)
+
+        // let i = 1;
+
+        // while (i <= 10) {
+        //     // console.log("Hola!")
+        //     console.log(`valor de i: ${i}`)
+        //     i++;
+        // }    i== 11
+
+
+        //FOR
+
+        // for (var i = 0; i <= 100; i += 5) {
+        //     console.log(`Valor de i: ${i} `)
+        // }
+
+        // for (var i = 20; i >= 0; i -= 2) {
+        //     console.log(`Valor de i: ${i} `)
+        // }
+
+
+        // for (var i = 0; i < 10; i++) {
+        //     console.log(`Valor de i: ${i} `)
+        // }
+
+
+        var nombre = prompt("Ingrese su nombre")
+        var pass = prompt("Ingrese su contraseña")
+
+        while (nombre != 'pedro' || pass != 'asd') {
+            alert("Usuario invalido")
+            nombre = prompt("Ingrese nuevamente su nombre")
+            pass = prompt("Ingrese nuevamente su contraseña")
+        }
+
+
+
+        for (var i = 0; i < 20; i++) {
+            console.log(`Valor de i: ${i}`)
+        }
+
+        for (var i = 5; i <= 80; i += 3) {
+            console.log(`Valor de i: ${i}`)
+        }
+
+        for (var i = 1; i <= 4096; i *= 2) {
+            console.log(`Valor de i: ${i}`)
+        }
+
+
+    </script>
+    <!-- Pedir al usuario nombre y contraseña. Los valores aceptados son "Pedro" "asd".
+    Si no coincide indicar el error y volver a pedir
+    
+    Generar los siguientes bucles: de 0 mientras sea menor a 20 de uno en uno
+    de 5 mientras sea menor o oigual a 80 de tres en tres
+    de 1 mientras sea menor o igual a 4096 multiplicando por dos -->
+
+</body>
+
+</html>

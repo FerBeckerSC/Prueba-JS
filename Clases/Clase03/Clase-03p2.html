@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Arrays - Arreglos, Vectores, Matrices</h1>
+    <p>Es una coleccion de datos indexados numericamente</p>
+
+    <h2>Metodos de arrays</h2>
+    <ul>
+        <li>push() -> Agrega un dato al final del array</li>
+        <li>pop() -> Borra el ultimo dato de un array</li>
+        <li>unshift() -> Agrega un dato al comienzo del array</li>
+        <li>shift() Borra un dato al comienzo del array</li>
+    </ul>
+
+    <script>
+
+        var variable = "dato"
+
+        var array = ["valor0", "valor1", "valor2"]
+
+        //Otras formas de declarar arrays
+        // var array = Array["valor0", "valor1", "valor2"]
+        // var array = new Array["valor0", "valor1", "valor2"]
+
+        // array[2] -> "valor2"
+        // array[3] -> undefined
+
+        // Metodos de los Arrays
+        // .push() -> Agregar elementos al final de un array
+        array.push("valorNuev1", "valorNuevo2")
+
+
+        // .pop() -> Quita un elemento del final del array
+        array.pop()
+
+        //.unshift() -> Agrega elementos al comienzo de un array
+        array.unshift("valorNuevo3", "valorNuevo4")
+
+        //.shift() -> Quita un elemento del comienzo del array
+
+        array.shift()
+
+
+        //ejercicio: Generar un array con 5 ciudades. Agregar tres al final y dos al comienzo. Quitar una del final y otra del comienzo.
+
+
+        var arrayEjercicioCiudades = ["San Vicente", "Glew", "Longchamps", "Burzaco", "Adrogue"]
+
+        arrayEjercicioCiudades.push("Temperley", "Lomas", "Banfield")
+
+        arrayEjercicioCiudades.unshift("MasAlla", "Alejandro Korn")
+
+        arrayEjercicioCiudades.pop()
+
+        arrayEjercicioCiudades.shift()
+
+
+
+
+
+
+        /* .splice() -> permite agregar, quitar, reemplazar en un array.
+        numInicio -> a partir de cual indice voy a hacer las modificaciones (incluyendolo) (en positivo) // Indice desde el final a partir del cual hare las modificaciones (en negativo)
+
+        Segundo parametro de .splice
+        cantABorrar -> int indica hasta cual elemento voy a borrar.
+
+        Tercer parametro de .splice
+        cantAAgregar -> escribo los elementos a agregar en el array
+*/
+
+        // var arrayEjercicioCiudades = ["San Vicente", "Glew", "Longchamps", "Burzaco", "Adrogue"]
+
+
+        // arrayEjercicioCiudades.splice(2, 1, "Nuevo1", "nuevo2")
+        // arrayEjercicioCiudades.splice(-3)
+
+
+        arrayEjercicioCiudades.splice(3, 2)
+
+        arrayEjercicioCiudades.splice(4, 0, "ciudadnueva", "ciudadnueva2")
+        console.log(arrayEjercicioCiudades)
+
+    // Ejercicio. Tomar el array resultante del ejercicio anterior y quitar 2 elementos a partir del indice 3. En el indice 4 agregar dos ciudades mas
+
+
+    </script>
+</body>
+
+</html>

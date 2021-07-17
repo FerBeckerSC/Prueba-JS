@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Eventos</h1>
+    <p>
+      Son sucesos, acciones, estados que le corresponden a los elementos del
+      HTML (cualquier objeto)
+    </p>
+
+    <button ondblclick="alert('Hiciste doble click')">Presioname!</button>
+
+    <script>
+      let btn = document.querySelector("button");
+
+      console.dir(btn);
+
+      btn.onclick = function () {
+        console.log("Hiciste click en el boton");
+      };
+
+      btn.onmouseover = function () {
+        this.style.backgroundColor = "lightblue";
+      };
+
+      btn.onmouseenter = function () {
+        this.style.backgroundColor = "lightblue";
+      };
+
+      btn.onmouseleave = function () {
+        this.style.backgroundColor = "";
+      };
+
+      function mostrarMensaje() {
+        console.log("Hola");
+      }
+
+      document.querySelector("h1").onclick = mostrarMensaje; /*
+      function () {
+          console.log(hola)
+      }
+      */
+
+      //btn.onclick();
+
+      //   let array1 = [0, 1, 2, 3, 4];
+      //   let array2 = array1; // Copia por referencia,NO DUPLICA LOS DATOS.
+      //Ambas variables apuntan al mismo OBJETO, array o function.
+      //   array2.pop();
+    </script>
+  </body>
+</html>

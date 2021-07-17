@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // let numero = 16;
+        // do {
+        //     numero += 6;
+        //     console.log(numero);
+        // } while (numero < 15);
+        // let enhancer = 1
+        // let counter = 0
+
+
+        // while (counter <= 10) {
+        //     enhancer *= 2;
+        //     counter++;
+        //     console.log(enhancer)
+        // }
+
+        let categoria = prompt("Ingrese su Categoria:");
+        switch (categoria) {
+            case "a":
+                categoria > 100000;
+                alert("Usted gana mas de 100.000$")
+                break;
+
+            case "b":
+                categoria > 70000;
+                alert("Usted gana entre  70.000$ y 100.000$")
+                break;
+
+            case "c":
+                categoria > 50000;
+                alert("Usted gana entre  50.000$ y 70.000$")
+                break;
+
+            case "d":
+                categoria > 25000;
+                alert("Usted gana entre  25.000$ y 50.000$")
+                break;
+
+            case "e":
+                categoria == 0;
+                alert("Usted no trabaja")
+                break;
+
+            case null:
+                alert("Has cancelado la operacion");
+                break;
+
+            default:
+                alert("Escribi bien amigo");
+                break;
+
+        }
+
+    </script>
+</body>
+
+</html>

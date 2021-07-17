@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Operaciones</h1>
+
+    <script>
+        //Operadores aritmeticas
+        var resultado;
+
+        resultado = 10 + 20;//Suma
+        resultado = 10 - 20;//Resta
+        resultado = 10 * 20;//Multiplicacion
+        resultado = 10 / 20;//Division
+
+        resultado = ((10 + 50) * 3) * 2;//
+        // Math. para buscar propiedades de Math. 
+        // Ej: Math.floor, Math.max, etc.
+
+        //op de incremento y decremento
+        var num = 10;
+        num = num + 1; //Suma +1 (11)
+        num++;// Suma +1 (12)
+        num += 3; //suma +3 (15)
+        num *= 2; // Multiplica *2 (30)
+        var numResta = 10;
+
+        var numResta = 10;
+        numResta = numResta - 1; //9
+        numResta--; //8
+
+        //Operadores de concatenacion -> concatenar es convertir varias cadenas de texto en una sola    -> La comilla simple y doble son lo mismo. Para el metodo de plantilla se usa el tilde invertido ` `
+
+        var frase1 = "Habia una vez"
+        var frase2 = "un barco chiquito"
+
+        fraseTotal = frase1 + frase2;
+        fraseTotal2 = frase1 + " " + frase2;
+
+        // Operadores Logicos
+
+        var bool;
+
+        //NOT, NO.
+        bool = !false;
+        //Devuelve siempre el operador opuesto. En este caso "true".
+
+        //AND Y &&; -> Devuelve true solo cuando todas las partes son verdaderas. Devuelve false cuando alguna de sus partes es falsa. 
+        bool1 = true && true && true; //true
+        bool2 = true && true && false; //false
+
+        //OR O || -> Devuelve false solo cuando todas sus partes son false. Devuelve true cuando algunas de sus partes es true. 
+        //Es un "O" inclusivo (permite que se cumplan todas las partes). Si todas las partes son true, devuelve true igual, cumple funcion de "y" tambien se podria decir. 
+        Bool3 = true || true || true; //true
+        bool4 = true || true || false;// true
+        bool5 = false || false || true;// true
+        bool6 = false || false || false;// false
+
+        console.log(bool4);
+        console.log(bool5);
+        console.log(bool6);
+
+        //Operaciones de Comparacion -> Devuelven booleans, segun se cumpla o no la comparacion.
+
+        let comparativa;
+        let comparativa2;
+        comparativa = 4 < 5; //Menor: true
+        comparativa2 = 4 > 5; //Mayor: false
+
+        comparativa3 = 4 <= 4; //Menor o igual
+        comparativa3 = 4 >= 4; //Mayor o igual
+
+        comparativa4 = 4 == "4"; // igual: true mismo valor distinto tipo de dato
+        comparativa5 = 4 != 4; // distinto de: false
+
+        comparativa6 = 4 === "4"// false mismo valor, pero distinto tipo de dato. 
+        comparativa7 = 4 !== "4"// true ya que no comparten tipo de dato. Para que sea true tendria que tener mismo tipo de dato, y mismo valor.
+
+        comparativa8 = (2 == "2") && (3 === "3");
+
+
+
+
+        console.log(`Resultado de la comparacion: ${comparativa}`)
+        console.log(`Resultado de la comparacion: ${comparativa2}`)
+        console.log(`Resultado de la comparacion: ${comparativa8}`)
+
+
+
+    </script>
+</body>
+
+</html>

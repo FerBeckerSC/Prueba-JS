@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Bucles y Arrays</h1>
+
+    <ol>
+        <li>Ciudad0</li>
+        <li>Ciudad1</li>
+        <li>Ciudad2</li>
+        <li>Ciudad3</li>
+        <li>Ciudad4</li>
+        <li>Ciudad5</li>
+    </ol>
+
+    <script>
+
+        var arrayCiudades = ["San Vicente", "Glew", "Longchamps", "Burzaco", "Adrogue", "Temperley", "asd", "ajskdjas"]
+
+
+        // console.log(arrayEjercicioCiudades[0])
+        // console.log(arrayEjercicioCiudades[1])
+        // console.log(arrayEjercicioCiudades[2])
+        // console.log(arrayEjercicioCiudades[3])
+        // console.log(arrayEjercicioCiudades[4])
+
+        // var num = 5;
+        // console.log(arrayEjercicioCiudades[num])
+
+        //0 1 2 3 4 5
+        // for (var i = 0; i <= 5; i++) {
+        //     console.log(`valor en el indice ${i}: ${arrayCiudades[i]}`)
+        // }
+
+        // De esta forma YO NO TENGO QUE SABER O ADIVINAR CUANTOS DATOS HAY EN EL ARRAY EL .LENGTH LO VA A BUSCAR POR MI
+        // for (var i = 0; i < arrayCiudades.length; i++) {
+        //     console.log(`valor en el indice ${i}: ${arrayCiudades[i]}`)
+        // }
+
+
+        //Ejercicio: Generar una cadena de texto donde se muestren todas las ciudades con los li de apertura y cierrre correspondientes. Una vez obtenida la cadena de texto, mostrar en el innerHTMl del ol. PD: Hay que usar un FOR. 
+
+
+
+
+        // Este ejercicio no entendi un choto
+        var ol = document.querySelector("ol")
+
+        var string = ""
+
+        for (var i = 0; i < arrayCiudades.length; i++) {
+            console.log(`<li> ${arrayCiudades[1]}</li>`)
+            string += `<li> ${arrayCiudades[i]} </li>`
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

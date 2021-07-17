@@ -1,0 +1,123 @@
+Que es un programa?
+Podemos definir un programa como un conjunto de instrucciones que ejecuta un
+procesador de computadora. Todo programa tendrá un conjunto finito de instrucciones, las
+cuales se van ejecutando 1 a 1 en cadena hasta finalizar la ejecución.
+
+Para empezar a trabajar con un programa es importante, entender que un programa es un plan que se va a llevar a cabo. 
+
+Lenguajes de Programación
+Se trata de un lenguaje formal, con reglas estrictas de escritura, el cual permite comunicarle a una
+computadora que es lo que debe hacer con absoluto detalle. 
+
+Todo lenguaje de programación se conforma por un conjunto de símbolos, signos de puntuación,
+operadores, valores, palabras clave e identificadores que permiten escribir las instrucciones a ejecutar.
+ A través de los lenguajes de programación podemos crear nuestros programas.
+
+ Javascript como Lenguaje de Programación
+Javascript, es el centro de todo porque es un lenguaje de programación interpretado por el propio
+navegador (Chrome, Firefox, Opera, IE, etc), sin necesidad de absolutamente nada más.
+
+
+Si bien no es obligatorio se recomienda el uso de ; (punto y coma) al final de cada sentencia para
+poder así evitar errores y separarla de las otras.
+
+En otros lenguajes de programación como PHP, estos separados son obligatorios, pero en este caso no
+es necesario.
+
+En Javascript Para visualizar algo usamos
+document.write("Hola, que tal")
+En PHP 
+echo "Hola Mundo";
+
+Modos para construir soluciones logicas
+-Estructura secuencial: Las instrucciones se ejecutan una atras de otra a modo de secuencia lineal.
+
+-Estructura Selectiva: Las instrucciones se desvian de una a otra instruccion, segun un criterio establecido. 
+
+-Estructura Ciclica: Las instrucciones se repiten segun condiciones simples o condiciones compuestas. 
+
+                    ------------------------------------------------
+                                        Script
+Concepto de un Script:
+
+-Es cada uno de los programas, aplicaciones o porciones de codigo creados con el lenguaje de programacion Javascript.
+
+-Un Script puede tener solo 1 linea de codigo o 1000 lineas de codigo y se le seguira llamando Script.
+
+Composicion de un Script:
+
+-Es un documento o archivo que contiene instrucciones, escritas en codigo de programacion.
+
+-Las instrucciones se especifican en un orden logico. 
+
+-Los Script son una especie de guion que describe un funcionamiento especifico. 
+                            -------------------------
+                                Que es JavaScript
+
+Es un lenguaje de programacion interpretado. 
+Se define como orientado a objetos (OOP)
+Se usa para mejorar la interactividad con los usuarios
+Se utiliza para mejorar la experiencia del lado del cliente/usuario.  
+                -------------------
+                    Variables
+Una variable es un elemento que se emplea para almacenar, guardar en un cajón la
+información y utilizarla nuevamente (por eso el nombre de variable).
+La verdad es que sin variables cualquier programa es inútil y sin sentido por eso es
+interesante conocerlas.
+
+
+Las reglas para poder nombrar una variable son las siguientes,
+● Los nombres de variables puede contener letras, números, _ (underscore) y signo de dólar
+($)
+● No se puede comenzar con un número
+● Los nombres son caseSensitive (esto significa que no es lo mismo A qué a)
+● Hay palabras reservadas que no las podés usar para nombres de variables. (ej function, else, if, etc.)
+
+Ejemplos de variables.
+
+let $numero1;
+const $$$numeroMasGrande;
+var _$numerito;
+Se recomienda utilizar variables que sean evidentes a la vista, para facilitarte y facilitarles la vida a otros programadores que vean tu codigo. 
+--------------------------------------------------------
+
+Como pensar de manera logica una solucion? 
+Un programa se compone de:
+
+1) Introduccion
+nombre = prompt("Ingrese su nombre:")
+apellido = prompt("Ingrese su apellido:")
+edad = prompt("Ingrese su edad:")
+
+
+2) Nudo
+    // Hola, yo soy XXXXXX, XXXXXX y tengo XX años.
+    mensaje = "Hola yo soy ${nombre}, ${apellido} y tengo ${edad} años."
+
+
+3) Desenlace
+
+    document.write(mensaje);
+
+--------------------------------------------------------
+            Entrada y Salida de Datos
+Ejemplo:
+
+Nombre = prompt("Ingrese su Nombre:");
+
+estaLista = confirm("¿Esta Listo?");
+
+if (estaListo) {
+    alert("Bienvenido ${Nombre}");
+}   else {
+    alert("Anda a dormir ${Nombre}");
+}
+
+document.write("Bienvenido ${Nombre}");
+            ---------------------------
+Estilos de Escritura (en JavaScript)
+    Recordar que el codigo se ejecuta de arriba a abajo
+    asi que prestar atencion al orden del codigo.
+
+    document.writeln("Hola"); (tabulado a la derecha)
+    document.writeln(prompt("Hola")); (doble parentesis)

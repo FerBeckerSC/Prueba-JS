@@ -1,0 +1,51 @@
+    Control de flujo de un programa
+
+Se llama  FLUJO DE CONTROL AL ORDEN EN EL QUE SE EJECUTAN LAS INSTRUCCIONES DE UN PROGRAMA, siendo las propias instrucciones las que determinan o controla dicho flujo.
+
+Tipos de estructuras de control:
+
+Existen 3 tipos de estructuras de control:
+-Secuenciales
+
+-Iterativas (o Repetitivas)
+
+-Condicionales (o Selectivas)
+
+Ahora nos vamos a centrar en las Condicionales.
+
+
+                ----------------------
+                
+Estructuras de control condicionales:
+
+Concepto
+
+Es una sentencia especial de los lenguajes de programacion.
+
+Su escritura tiene un formato predefinido 
+Ej: if (condicion) { a ejecutar}
+
+Estan presentes en todos los lenguajes, variando unicamente su sintaxis. 
+
+Funcionalidad
+
+Son elementos fundamentales en la construccion de sentencias y comportamientos logicos de un programa.
+
+Permiten tomar decisiones acerca de que ordenes debe ejecutar el programa.
+
+La decision a tomar se evalua en base a una condicion
+ej: Condicion - Sentencia 1 (if true), Sentencia 2 (if false)
+--------------------------------------------------------
+Anidamiento de Condicionales
+
+Un condicional if puede escribirse dentro del bloque de otro if (sea en su camino principal o en su
+camino alternativo), de manera de generar múltiples caminos de ejecución. Mediante el anidamiento de
+condicionales el código comienza a “ramificarse”
+
+
+
+
+
+
+
+

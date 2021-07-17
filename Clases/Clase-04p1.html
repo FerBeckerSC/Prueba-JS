@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funciones</title>
+  </head>
+  <body>
+    <h1>Funciones</h1>
+    <p>
+      Codigo reutilizable. Principio de modularizacion -> que cada funcion
+      resuelva un problema particular, no que posea demasiadas.
+    </p>
+    <script>
+      let num = Number("123"); // 123
+
+      function nombreFuncion(par1, par2) {
+        //codigo
+        // return "algo"
+      }
+
+      let array = [0, 1, 2, 3, 4];
+
+      array.pop();
+
+      let string = "aASDASDsss";
+      let stringMin = string.toLowerCase();
+      //   console.log(string);
+      //   console.log(stringMin);
+
+      //   function sumar(num1, num2) {
+      //     return num1 + num2;
+      //   }
+
+      //   let numeroA = 10;
+      //   let numeroB = 20;
+      //   console.log(sumar(10, 15));
+
+      //   console.log(sumar(numeroA, numeroB));
+      //Copia por valor -> Lo que se envia a la funcion no es LA VARIABLE sino solamente su valor (texto, numeros, bool, null, undefined)
+
+      //Scope -> Tanto los parametros como las variables creadas dentro de la funcion solo existen alli dentro. Por fuera de ese ambito, esas variables no existen.
+      //Desde dentro de la funcion puedo utilizar las variables que sean GLOBABLES (es decir, que fueron creadas fuera de toda funcion)
+
+      crearFrase("Carlos");
+
+      function Multiplica(num1, num2) {
+        return num1 * num2;
+      }
+      console.log(Multiplica(12, 5));
+
+      function crearFrase(nombre) {
+        var frase = `Hola ${nombre}!`;
+        //console.log(varGlobal)
+        return frase;
+      }
+
+      function saludar(nombre) {
+        var frase = crearFrase(nombre);
+        alert(frase);
+      }
+      saludar("Lucas");
+
+      //Ejercicio: Generar una funcion que reciba dos numeros como parametros y retorne la multiplicacion de ellos
+      //Generar una funcion que se llame saludar, la cual va a recibir como pametro el nombre de una persona lo va a enviar a la funcion crearFrase y con lo que ella le retorne los mostrara en un alert
+    </script>
+  </body>
+</html>

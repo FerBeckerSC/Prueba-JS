@@ -1,0 +1,48 @@
+Elementos Fundamentales (de la programacion)
+<h2>ALGORITMOS</h2>
+
+Algoritmos: Son los pasos logicos a seguir para resolver un problema.
+
+La actividad fundamental del programador es resolver problemas empleando el ordenador como herramienta fundamental.
+
+Para la resolucion de un problema se debe plantear un algoritmo.
+
+La finalidad de un algoritmo es programar el respectivo comportamiento de un programa. 
+                    ---------------
+Elementos Fundamentales II (de la programacion)
+<h2>PROGRAMAS</h2>
+
+Programa: Es el conjunto de instrucciones que entiende un ordenador para realizar una actividad. 
+
+Todo programa debe tener un objetivo bien definido. 
+
+Objetivo general (de un programa): Satisfacer desde la informatica una necesidad identificada, Ej: calendarios, agendas, registro de personas, planillas de productos, etc. 
+                    ----------------
+
+Elementos Fundamentales III (de la programacion)
+<h2>LENGUAJES DE PROGRAMACION</h2>
+
+Lenguajes de Programacion: Es el recurso tecnico por el cual un programador desarrolla una solucion a una necesidad a traves de algoritmos. 
+
+Representa el medio por el cual el PROGRAMADOR y el EQUIPO INFORMATICO (computadora, laptop, etc.) se relacionan (o comunican).
+
+Los lenguajes de programacion se componen a base de palabras claves, expresiones, comandos y construcciones, las cuales los programadores deberan implementar de manera que se conviertan en soluciones UTILES a las necesidades (o problemas) que se esten planteando resolver a traves de la programacion.
+
+
+                    ---------------
+
+La programacion nos permite:
+
+Creacion de Software: La creacion de un programa o elemento logico que hacen funcionar un ordenador.
+
+
+La programacion tiene por premisa:
+
+Utilizar Lenguajes de programacion: Comandos que un ordenador entiende (y un humano tambien).
+
+Pensamiento logico: Habilidad humana para identificar problemas y construir soluciones informaticas. 
+
+
+ 
+
+

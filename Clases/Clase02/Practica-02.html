@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Buena onda la piba</h1>
+    <script>
+
+        // let edadPiba = prompt("Por favor, ingresa tu edad piba");
+        // if (edadPiba == 20) {
+        //     alert("Esta piba tiene 20")
+        // } else if (edadPiba < 20) {
+        //     alert("Esta piba tiene menos de 20 ")
+        // } else {
+        //     alert("Esta piba tiene mas de 20")
+        // };
+
+        // let edad = prompt("Cuantos años tenes usuario?")
+
+        // if (edad > 20) {
+        //     alert("TENES MAS DE 20 CAPO")
+        // } else if (edad < 20) {
+        //     alert("TENES MENOS DE 20 CAPO")
+        // } else {
+        //     alert("TENES 20 HERMANO")
+        // };
+
+        let nombre = prompt("Como te llamas pibe?")
+        let edad = prompt("Cuantos años tenes pibe?")
+        let mensaje = (`<h2> Hola ${nombre}, tenes ${edad}, podes  pasar master </h2>`);
+        let mensaje2 = (` Hola ${nombre}, tenes ${edad}, tene cuidado pa`);
+        let mensaje3 = (` Hola ${nombre}, tenes ${edad}, TENES MENOS DE 15, SOS UN RETOÑO`);
+        if (edad > 20) {
+            // alert("TENES MAS DE 20, PASA HERMANO")
+            document.write(mensaje)
+        } else if (edad <= 20 && edad > 14) {
+            document.write(mensaje2)
+        } else if (edad == null || edad == 0) {
+            alert("PONE UN NUMERO, FORRO")
+        } else {
+            document.write(mensaje3);
+        };
+
+
+
+
+
+        // document.write(mensaje)
+
+
+
+    </script>
+
+</body>
+
+</html>

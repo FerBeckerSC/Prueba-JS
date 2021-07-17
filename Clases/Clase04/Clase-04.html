@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1><strong> Dom -> Document</strong></h1>
+    <h1>ejemplo1</h1>
+    <h1>ejemplo2</h1>
+    <h1>ejemplo3</h1>
+    <script>
+      let titulo = document.querySelector("h1");
+
+      let titulos = document.querySelectorAll("h1"); // Trae todos los elementos
+
+      //Trae el primer elemento que cumpla con el selector.
+      console.log(titulo); //Muestra una referencia grafica al elemento HTML
+
+      console.dir(titulo); // Muestra el elemento como un objeto
+
+      titulo.innerText; // Muestra el TEXTO tal cual se lee en la pantalla
+
+      titulo.innerHTML; //Muestra el CODIGO tal cual se lee en la pantalla
+
+      titulo.style; //Permite acceder a la API de ...
+    </script>
+  </body>
+</html>

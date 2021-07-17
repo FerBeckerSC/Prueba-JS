@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Variables Locales</h1>
+    <h2>Variables locales ¿Qué son?</h2>
+
+    <p>
+      Son aquellas variables declaradas dentro de un modulo, function o
+      procedimiento
+    </p>
+    <p>Su alcance (o SU EXISTENCIA) sera el propio modulo o function</p>
+    <p>Por fuera del modulo, la VARIABLE NO SERA RECONOCIDA (NO EXISTE)</p>
+
+    <script>
+      let global = 15;
+
+      function calcular() {
+        var local = 12;
+        var local2 = 11;
+        console.log(local + local2);
+      }
+      calcular();
+
+      //   console.log(local); //No se puede, PORQUE ES LOCAL
+
+      //   console.log(global + 10); //25
+      //   console.log(global + local); //No se puede, ya que var local NO EXISTE FUERA DE LA FUNCION
+    </script>
+  </body>
+</html>
